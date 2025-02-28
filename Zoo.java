@@ -9,17 +9,25 @@ public class Zoo
 {
     // instance variables - replace the example below with your own
     private ArrayList<Bird> zooBirds;
-
-    int countBlueBirds()
+    
+    public Zoo() 
     {
-        int i = 1;
+        zooBirds = new ArrayList<Bird>();
+        zooBirds.add(new Bird("blue","blue jay",2));
+        zooBirds.add(new Bird("blue","blue jay",2));
+        zooBirds.add(new Bird("red","blue jay",2));
+    }
+    
+    public int countBlueBirds()
+    {
         int sum = 0;
-        //while(Bird = (color="Blue") && Bird>=i)
-        //{
-        //    int sum = sum + i;
-        //    i++;
-        //    System.out.println(sum);
-        //}
+        for (Bird bird : zooBirds)
+        {
+            if(bird.getColor().equals("blue"))
+            {
+                sum++;
+            }
+        }
         return sum;
     }
 }

@@ -34,4 +34,8 @@ public class Bird
         // put your code here
         System.out.println("Bird_vocalization_in_action...");
     }
+    
+        public String getColor() {
+        return color;
+    }
 }
