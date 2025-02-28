@@ -14,7 +14,7 @@ public class Zoo
     {
         int i = 1;
         int sum = 0;
-        //while(Bird = (color="Blue")&& Bird>=i)
+        //while(Bird = (color="Blue") && Bird>=i)
         //{
         //    int sum = sum + i;
         //    i++;

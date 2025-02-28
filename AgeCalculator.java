@@ -13,14 +13,14 @@ public class AgeCalculator
     public int ageCalculation(int yearOfBirth)
     {
         int age = currentYear - yearOfBirth;
-        //if (age>=16)then
-       // {
-       //     System.out.println("you can drive");
-       // }
-        //else{
-       //     int remainder = 16 - age;
-       //     System.out.println("you need to wait "+remainder+" years to start driving");
-       // }
+        if (age>=16)
+        {
+            System.out.println("you can drive");
+        }
+        else{
+            int remainder = 16 - age;
+            System.out.println("you need to wait "+remainder+" years to start driving");
+        }
         return age;
     }
 }
